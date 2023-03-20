@@ -1,0 +1,505 @@
+body {
+    font-family: 'Josefin Sans', sans-serif; /* font-family: 'Alata', sans-serif; */
+    background: url(../images/mobile/image-hero.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-logo, .hamburger {
+    margin: 30px 20px;
+}
+
+.hamburger {
+    margin-top: 35px;
+}
+
+nav {
+    width: 100%;
+    height: 0%;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    position: fixed;
+    background-color: hsl(0, 0%, 0%);
+    overflow: hidden;
+    transition: .8s;
+}
+
+.logo-close-for-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    align-items: center;
+}
+
+.nav-links {
+    text-align: left;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(0, 0%, 55%);
+    margin-top: 25px;
+    width: 100%;
+}
+
+.nav-links:hover, .nav-links:focus {
+    background: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    transition: .8s;
+    padding: 15px;
+    border: none;
+}
+
+.nav-links-container {
+    margin-top: 20%;
+    margin-left: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-section {
+    height: 80vh;
+}
+
+h1 {
+    border: 2px solid hsl(0, 0%, 100%);
+    margin: auto;
+    width: 80%;
+    text-align: left;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    margin-top: 40%;
+    line-height: 40px;
+    font-weight: lighter;
+}
+
+.pitch-talk-container {
+    margin-top: -60px;
+}
+
+.about-us {
+    width: 90%;
+    margin: 48px auto;
+}
+
+.about-us h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: auto;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+}
+
+.about-us p {
+    line-height: 28px;
+    color:hsl(0, 0%, 55%)
+}
+
+.pitch-img-mobile, .creation-img {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.pitch-img-desktop, .image-text-overlay-desktop {
+    display: none;
+}
+
+.creations {
+    margin-top: 64px;
+}
+
+.creations h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin-bottom: 48px;
+}
+
+.creation-img:hover, .creation-img:focus {
+    opacity: .4;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.see-all {
+    border: 1px solid hsl(0, 0%, 0%);
+    padding: 10px;
+    width: 40%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: hsl(0, 0%, 100%);
+}
+
+.see-all:hover, .see-all:focus {
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: .8s;
+}
+
+.see-all-desktop {
+    display: none;
+}
+
+.image-text-overlay {
+    position: relative;
+    margin-top: 24px;
+}
+
+.text-overlay {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 12%;
+    top: 60%;
+}
+
+.see-all-mobile {
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+footer {
+    background: hsl(0, 0%, 0%);
+}
+
+.logo-page-links {
+    padding-top: 48px;
+}
+
+.foot-logo {
+    margin-bottom: 24px;
+}
+
+.page-links {
+    margin-bottom: 48px;
+}
+
+.page-links a {
+    display: block;
+    margin-top: 24px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.page-links a:hover, .page-links a:focus {
+    /* border-bottom: 1px solid hsl(0, 0%, 100%); */
+    transition: 1.8s;
+    text-decoration: underline;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.soc {
+    padding: 5px;
+}
+
+.soc:hover, .soc:focus {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    transition: 1.8s;
+}
+
+.copyright {
+    color: hsl(0, 0%, 55%);
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 32px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+.challenge-origin {
+    color: hsl(0, 0%, 55%);
+}
+
+.challenge-author {
+    color: hsl(197, 42%, 75%);
+}
+
+.challenge-author:hover, .challenge-origin:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+
+    .head-logo, .hamburger {
+        margin: 60px;
+    }
+
+    .logo-close-for-nav {
+        margin: 60px;
+    }
+
+    .nav-links-container {
+        margin-left: 60px;
+    }
+
+    .nav-links {
+        margin-top: 48px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        margin-top:50%;
+        font-size: 64px;
+        line-height: 72px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        background: url(../images/desktop/image-hero.jpg) no-repeat;
+        height: 50vh;
+    }
+
+    nav {
+        height: 100%;
+        position: unset;
+        background: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .logo-close-for-nav {
+        display: none;
+    }
+
+    .nav-links-container {
+        margin-top: 70px;
+        /* display: flex;
+        justify-content: space-between; 
+        wi dth: 100%; */
+        margin-left: 40%;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        display: inline;
+        text-transform: capitalize;
+        color: hsl(0, 0%, 100%);
+        padding: 10px;
+    }
+
+    .nav-links:hover, .nav-links:focus {
+        background: none;
+        color: hsl(0, 0%, 100%);
+        border-bottom: 2px solid hsl(0, 23%, 92%);
+    }
+
+    .hero-section {
+        margin-top: -30vh;
+        text-align: left;
+        width: 60%;
+        margin-left: 40px;
+    }
+
+    .pitch-talk-container {
+        display: flex;
+        position: relative;
+        width: 87%;
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .about-us {
+        background:hsl(0, 0%, 100%) ;
+        z-index: 5;
+        width: 50%;
+        position: absolute;
+        padding: 72px;
+        padding-bottom: 0;
+        text-align: left;
+        right: -50px;
+        bottom: -48px;
+    }
+
+    .pitch-img-mobile {
+        display: none;
+    }
+
+    .pitch-img-desktop {
+        display: block;
+        width: 80%;
+        height: 500px;
+        object-fit: contain;
+    }
+
+    .creations {
+        margin-top: 80px;
+    }
+
+    .creations-heading {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        align-items: baseline;
+    }
+
+    .creations h2 {
+        margin-left: -60px;
+    }
+
+    .creations-heading a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .see-all-desktop {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
+
+    .see-all-mobile {
+        display: none;
+    }
+
+    .creation-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+    }
+
+    .image-text-overlay {
+        display: none;
+    }
+
+    .image-text-overlay-desktop {
+        display: block;
+        position: relative;
+    }
+    
+    .text-overlay-desktop {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 100;
+        color: hsl(0, 0%, 100%);
+        width: 50%;
+        text-align: left;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-links {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -10px;
+    }
+
+    .foot-logo {
+        margin-left: -140px;
+    }
+
+    .foot-page-link {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .socials-copyright {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .head-logo {
+        margin-left: 80px;
+    }
+
+    .nav-links-container {
+        margin-left: 52%;
+    }
+
+    .hero-section {
+        margin-top: -40vh;
+    }
+
+    .pitch-talk-container {
+        width: 84%;
+        margin: auto;
+        margin-top: -150px;
+    }
+
+    .pitch-img-desktop {
+        width: 50%;
+    }
+
+    .about-us {
+        bottom: 15px;
+    }
+
+    .about h2 {
+        font-size: large;
+    }
+
+    .creations h2 {
+        margin-left: -70px;
+    }
+
+    .see-all-desktop {
+        margin-left: 70px;
+    }
+}
